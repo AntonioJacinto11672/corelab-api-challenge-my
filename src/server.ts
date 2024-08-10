@@ -16,6 +16,7 @@ const start = async () => {
     try {
 
         //app backend listem port 8000
+            
         await app.listen({ port: 8000 })
     } catch (error) {
         process.exit()
