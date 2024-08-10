@@ -1,9 +1,9 @@
 export type TaskType = {
     id: string,
-    name: string,
+    title: string,
     description: string,
-    isFavorite: string,
+    isFavorite: boolean,
     color: string,
-    createAt: Date,
-    updateAt: Date
+    createAt?: Date,
+    updateAt?: Date
 }

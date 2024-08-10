@@ -9,16 +9,16 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 model tasks {
-  id Int @id @default(autoincrement())  
-  name String
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  title String
   description String
-  isFavorite String
-  color String
+  isFavorite Boolean @default(false)
+  color String 
   createAt DateTime? @default(now())
   updateAt DateTime? @updatedAt
 }
