@@ -1,9 +1,10 @@
 import prismaClient from "../prisma";
-import { TaskType } from "../types/taskType";
+import { TaskType } from "../types/TaskType";
 
 interface TaskServiceProps {
     id: string
 }
+
 
 class TaskService {
     /* Pegar todas as Task no Banco de dados */
@@ -46,6 +47,8 @@ class TaskService {
     /* Adicionar ao favoritos */
     async handleFavorite({ id }: TaskServiceProps) {
         let isFavoriteCurrent: boolean = true
+
+        console.log("Vai editar ")
 
         const findTask = await prismaClient.tasks.findFirst({
             where: {

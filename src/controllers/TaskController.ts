@@ -1,5 +1,5 @@
 import { FastifyReply, FastifyRequest } from "fastify";
-import { TaskType } from "../types/taskType";
+import { TaskType } from "../types/TaskType";
 import { TaskService } from "../services/TaskService";
 
 const useTaskservice = new TaskService()
@@ -42,11 +42,11 @@ class TaskController {
     }
 
     async handleFavorite(request: FastifyRequest, reply: FastifyReply) {
-        const { id } = request.query as { id: string }
+        const { id } = request.body as { id: string }
 
-        console.log("O Id", id)
+        console.log("O Id do Favorito", request.body)
 
-        if (!id) {
+        if (!id || (id == undefined)) {
             throw new Error("O Id é necessario!")
         }
 
@@ -58,7 +58,7 @@ class TaskController {
 
     async handleColor(request: FastifyRequest, reply: FastifyReply) {
 
-        const { id, color } = request.query as { id: string, color: string }
+        const { id, color } = request.body as { id: string, color: string }
 
         console.log("O Id", id)
 
