@@ -23,6 +23,10 @@ Repositórios
 
 # Tecnologias Utilizadas
 
+## Pré-requisitos
+  Node.js ^20.13.1
+  npm ^10.5.2
+  
 ## Back-end
 Nodejs
 
