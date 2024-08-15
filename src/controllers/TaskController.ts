@@ -1,5 +1,5 @@
 import { FastifyReply, FastifyRequest } from "fastify";
-import { TaskType } from "../types/TaskType";
+import { TaskType } from "../types/taskType";
 import { TaskService } from "../services/TaskService";
 
 const useTaskservice = new TaskService()
@@ -52,6 +52,8 @@ class TaskController {
         }
 
         const taskRespponse = await useTaskservice.updateTask(data)
+
+        reply.send(taskRespponse)
 
     }
 

@@ -1,5 +1,5 @@
 import prismaClient from "../prisma";
-import { TaskType } from "../types/TaskType";
+import { TaskType } from "../types/taskType";
 
 interface TaskServiceProps {
     id: string
@@ -65,7 +65,8 @@ class TaskService {
             },
             data: {
                 title: data.title,
-                description: data.description
+                description: data.description,
+                isFavorite: data.isFavorite
             }
         })
 
