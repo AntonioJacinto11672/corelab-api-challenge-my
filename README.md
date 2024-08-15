@@ -15,10 +15,10 @@ Este projecto esta viculado a dois repositorio, backend e frontend, foi desenvol
 
 Repositórios
 
-[O repositório Frontend](https://github.com/AntonioJacinto11672/corelab-web-challenge) 
+[O repositório Frontend](https://github.com/AntonioJacinto11672/corelab-web-challenge_my) 
 
 
-[O repositório Backend](https://github.com/AntonioJacinto11672/corelab-api-challenge)
+[O repositório Backend](https://github.com/AntonioJacinto11672/corelab-api-challenge-my)
 
 
 # Tecnologias Utilizadas
@@ -121,6 +121,12 @@ npm run dev
 Nota: O projecto utilizou o React  + Vite para inicialização, o projecto vai inicializar na porta 5173 se essa porta estiver em uso, vai passar para 5174 sucessivamente
 
 
+Vídeo explicado como utilizar
+
+  
+
+
+https://github.com/user-attachments/assets/d974f6fb-bcde-4b5e-893a-070bb788e7d5
 
 
 
