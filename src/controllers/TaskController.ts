@@ -26,9 +26,7 @@ class TaskController {
                 throw new Error("O título é necessario!")
             } else if (!data.description) {
                 throw new Error("Adiciona conteudo...")
-            } else if (!data.color) {
-                throw new Error("Escolhe uma cor!")
-            }
+            } 
         }
 
         const responseControllerTask = await useTaskservice.ceateTask(data)

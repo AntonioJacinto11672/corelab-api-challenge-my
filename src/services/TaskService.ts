@@ -7,12 +7,24 @@ interface TaskServiceProps {
 
 
 class TaskService {
-    /* Pegar todas as Task no Banco de dados */
+    /* Service contanto directo com o banco d dado  */
+
     async getAllTask() {
+        /* Pegar todas as Task no Banco de dados */
         const responseServiceTask = await prismaClient.tasks.findMany({
-            orderBy: {
-                isFavorite: 'desc',
-            }
+            orderBy: [
+                {
+                    createAt: 'desc', // Ordena por data de cração em ordem descendente
+                },
+                {
+                    isFavorite: 'desc', // Ordena por isFavorite em ordem descendente
+                },
+                {
+                    updateAt: 'desc', // Ordena pela data de alteração em ordem ascendente
+                },
+
+            ],
+
         })
 
 

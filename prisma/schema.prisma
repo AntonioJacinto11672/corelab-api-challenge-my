@@ -18,7 +18,7 @@ model tasks {
   title String
   description String
   isFavorite Boolean @default(false)
-  color String @default("color1") 
+  color String @default("white") 
   createAt DateTime? @default(now())
   updateAt DateTime? @updatedAt
 }
