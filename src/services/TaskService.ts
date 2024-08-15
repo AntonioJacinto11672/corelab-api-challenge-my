@@ -44,16 +44,32 @@ class TaskService {
     }
 
 
-    async updateTask({ id }: TaskServiceProps) {
+    async updateTask(data: TaskType) {
+
+       
         const findTask = await prismaClient.tasks.findFirst({
             where: {
-                id: id
+                id: data.id
             }
         })
 
+
         if (!findTask) {
             throw new Error("Tarefa não encontrada!")
-        }
+        } 
+
+
+        const responseServiceTask = await prismaClient.tasks.update({
+            where: {
+                id: data.id
+            },
+            data: {
+                title: data.title,
+                description: data.description
+            }
+        })
+
+        return responseServiceTask
     }
 
     /* Adicionar ao favoritos */

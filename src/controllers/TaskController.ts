@@ -26,7 +26,7 @@ class TaskController {
                 throw new Error("O título é necessario!")
             } else if (!data.description) {
                 throw new Error("Adiciona conteudo...")
-            } 
+            }
         }
 
         const responseControllerTask = await useTaskservice.ceateTask(data)
@@ -36,6 +36,22 @@ class TaskController {
     }
 
     async updateTask(request: FastifyRequest, reply: FastifyReply) {
+        const data: TaskType = request.body as TaskType
+
+        //console.log("Data ", data)
+
+        /* Verificar se os dados estão vazio */
+        if (!data) {
+            throw new Error("Preecha todos os Campos!")
+        } else {
+            if (!data.title) {
+                throw new Error("O título é necessario!")
+            } else if (!data.description) {
+                throw new Error("Adiciona conteudo...")
+            }
+        }
+
+        const taskRespponse = await useTaskservice.updateTask(data)
 
     }
 
