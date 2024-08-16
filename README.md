@@ -53,7 +53,7 @@ Primeiro tens que clonar o Arquivo
 #### Comando para clonar o respositorio
 
 ```
-git clone git@github.com:AntonioJacinto11672/corelab-api-challenge.git
+git clone git@github.com:AntonioJacinto11672/corelab-api-challenge-my.git
 ```
 
 
@@ -98,7 +98,7 @@ npm run dev
 Primeiro tens de clonar o arquivo
 
 ```
-git clone git@github.com:AntonioJacinto11672/corelab-web-challenge.git
+git clone git@github.com:AntonioJacinto11672/corelab-web-challenge_my.git
 ```
 
 Antes de iniciar a aplicação, precisamos instalar o 'node_modules' e para isso, basta abrir um terminal na pasta "backend" (é aconselhável utilizar o terminal do editor/IDE).
