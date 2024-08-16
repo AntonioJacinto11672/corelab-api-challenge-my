@@ -70,7 +70,7 @@ Na raiz do projeto haverá um arquivo chamado ".env.example" este arquivo conté
 DATABASE_URL=colocar_aqui_tua _string_de_acesso
 ```
 
-Antes de iniciar a aplicação, precisamos instalar o 'node_modules' e para isso, basta abrir um terminal na pasta "backend" (é aconselhável utilizar o terminal do editor/IDE).
+Antes de iniciar a aplicação, precisamos instalar o 'node_modules' e para isso, basta abrir um terminal na pasta "corelab-api-challenge-my" (é aconselhável utilizar o terminal do editor/IDE).
 
 ### Comando para baixar o 'node_modules'
 
@@ -101,7 +101,7 @@ Primeiro tens de clonar o arquivo
 git clone git@github.com:AntonioJacinto11672/corelab-web-challenge_my.git
 ```
 
-Antes de iniciar a aplicação, precisamos instalar o 'node_modules' e para isso, basta abrir um terminal na pasta "backend" (é aconselhável utilizar o terminal do editor/IDE).
+Antes de iniciar a aplicação, precisamos instalar o 'node_modules' e para isso, basta abrir um terminal na pasta "corelab-web-challenge_my" (é aconselhável utilizar o terminal do editor/IDE).
 
 ### Comando para baixar o 'node_modules'
 
